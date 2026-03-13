@@ -1,0 +1,3069 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carecraft Hospital – Haripad | Compassionate Healthcare 24/7</title>
+    <meta name="description"
+        content="Carecraft Hospital in Haripad, Kerala – providing compassionate 24/7 healthcare including orthopedic care, physiotherapy, dental, and emergency services.">
+    <meta name="keywords"
+        content="Carecraft Hospital Haripad, Hospital in Haripad, Physiotherapy Haripad, Orthopedic treatment Haripad, Emergency care Kerala">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
+        rel="stylesheet">
+    <style>
+        .footer-logo img {
+            height: 55px;
+            width: auto;
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        @media(max-width:768px) {
+            .footer-logo img {
+                height: 45px;
+            }
+        }
+
+        .nav-logo img {
+            height: 50px;
+            width: auto;
+            object-fit: contain;
+            transition: all .3s ease;
+        }
+
+        :root {
+            --purple: #97047D;
+            --purple-dark: #7a0366;
+            --purple-light: #f5e8f3;
+            --teal: #6DC5BA;
+            --teal-dark: #4fa89c;
+            --teal-light: #e8f7f6;
+            --white: #FFFFFF;
+            --bg: #F7F9FC;
+            --text: #1F2937;
+            --text-muted: #6B7280;
+            --border: #E5E7EB;
+            --shadow: 0 4px 24px rgba(0, 0, 0, .07);
+            --shadow-lg: 0 12px 48px rgba(0, 0, 0, .13);
+            --radius: 16px;
+            --radius-sm: 10px;
+        }
+
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background: var(--white);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4 {
+            font-family: 'Playfair Display', serif;
+            line-height: 1.25;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .container {
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 14px 28px;
+            border-radius: 50px;
+            font-family: 'DM Sans', sans-serif;
+            font-weight: 600;
+            font-size: 15px;
+            cursor: pointer;
+            border: none;
+            transition: all .25s;
+            white-space: nowrap;
+        }
+
+        .btn-primary {
+            background: var(--purple);
+            color: #fff;
+            box-shadow: 0 4px 18px rgba(151, 4, 125, .28);
+        }
+
+        .btn-primary:hover {
+            background: var(--purple-dark);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: var(--purple);
+            border: 2px solid var(--purple);
+            
+        }
+
+        .btn-outline:hover {
+            background: var(--purple);
+            color: #fff;
+            transform: translateY(-2px);
+        }
+
+        .btn-white {
+            background: #fff;
+            color: var(--purple);
+            font-weight: 700;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, .15);
+        }
+
+        .btn-white:hover {
+            background: var(--purple-light);
+            transform: translateY(-2px);
+        }
+
+        .btn-outline-white {
+            background: transparent;
+            color: #fff;
+            border: 2px solid rgba(255, 255, 255, .55);
+        }
+
+        .btn-outline-white:hover {
+            background: rgba(255, 255, 255, .1);
+            transform: translateY(-2px);
+        }
+
+        /* NAV */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 999;
+            background: rgba(255, 255, 255, .97);
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid var(--border);
+            transition: box-shadow .3s;
+        }
+
+        nav.scrolled {
+            box-shadow: 0 4px 20px rgba(0, 0, 0, .07);
+        }
+
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 16px 24px;
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .nav-logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-mark {
+            width: 40px;
+            height: 40px;
+            background: var(--purple);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .nav-logo strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 18px;
+            color: var(--purple);
+            display: block;
+            line-height: 1.1;
+        }
+
+        .nav-logo span {
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: .5px;
+            display: block;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            font-size: 15px;
+            font-weight: 500;
+            color: var(--text-muted);
+            transition: color .2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--purple);
+        }
+
+        .nav-right {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+        }
+
+        .nav-tel {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--purple);
+        }
+
+        .hamburger {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            cursor: pointer;
+            padding: 4px;
+        }
+
+        .hamburger span {
+            width: 24px;
+            height: 2px;
+            background: var(--text);
+            border-radius: 2px;
+            transition: .3s;
+        }
+
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 73px;
+            left: 0;
+            right: 0;
+            background: #fff;
+            border-bottom: 1px solid var(--border);
+            padding: 20px 24px;
+            z-index: 998;
+            flex-direction: column;
+            gap: 4px;
+            box-shadow: 0 12px 40px rgba(0, 0, 0, .1);
+        }
+
+        .mobile-menu.open {
+            display: flex;
+        }
+
+        .mobile-menu a {
+            font-size: 15px;
+            font-weight: 500;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        .mobile-menu .btn {
+            margin-top: 10px;
+            justify-content: center;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 100vh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-top: 73px;
+            overflow: hidden;
+        }
+
+        .hero-img {
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+        }
+
+        .hero-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            display: block;
+        }
+
+        .hero-dim {
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: rgba(10, 15, 30, .64);
+        }
+
+        .hero-inner {
+            position: relative;
+            z-index: 2;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+            max-width: 1180px;
+            margin: 0 auto;
+            padding: 80px 24px;
+            width: 100%;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            background: rgba(109, 197, 186, .14);
+            border: 1px solid rgba(109, 197, 186, .32);
+            color: var(--teal);
+            padding: 8px 16px;
+            border-radius: 50px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            margin-bottom: 22px;
+        }
+
+        .badge-dot {
+            width: 7px;
+            height: 7px;
+            background: var(--teal);
+            border-radius: 50%;
+            animation: pdot 2s infinite;
+        }
+
+        @keyframes pdot {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1)
+            }
+
+            50% {
+                opacity: .4;
+                transform: scale(1.6)
+            }
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 4.2vw, 54px);
+            color: #fff;
+            font-weight: 700;
+            margin-bottom: 18px;
+        }
+
+        .hero h1 em {
+            font-style: normal;
+            color: var(--teal);
+        }
+
+        .hero-sub {
+            font-size: 16px;
+            color: rgba(255, 255, 255, .72);
+            margin-bottom: 32px;
+            line-height: 1.78;
+            max-width: 470px;
+        }
+
+        .hero-btns {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 40px;
+        }
+
+        .hero-checks {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .hcheck {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: rgba(255, 255, 255, .82);
+        }
+
+        .hcheck-ic {
+            width: 21px;
+            height: 21px;
+            border-radius: 50%;
+            background: rgba(109, 197, 186, .16);
+            border: 1px solid rgba(109, 197, 186, .36);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .hero-card-wrap {
+            position: relative;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .hero-card {
+            background: rgba(255, 255, 255, .07);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, .12);
+            border-radius: 20px;
+            padding: 28px;
+            width: 100%;
+            max-width: 400px;
+            animation: float 5.5s ease-in-out infinite;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0)
+            }
+
+            50% {
+                transform: translateY(-10px)
+            }
+        }
+
+        .hcard-top {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            margin-bottom: 22px;
+            padding-bottom: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, .1);
+        }
+
+        .hcard-av {
+            width: 48px;
+            height: 48px;
+            background: var(--purple);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .hcard-top strong {
+            color: #fff;
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            display: block;
+        }
+
+        .hcard-top span {
+            color: rgba(255, 255, 255, .5);
+            font-size: 15px;
+        }
+
+        .hcard-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 16px;
+        }
+
+        .hcard-stat {
+            background: rgba(255, 255, 255, .06);
+            border-radius: 10px;
+            padding: 13px;
+            text-align: center;
+        }
+
+        .hcard-stat strong {
+            display: block;
+            color: var(--teal);
+            font-size: 25px;
+            font-family: 'Playfair Display', serif;
+        }
+
+        .hcard-stat span {
+            color: rgba(255, 255, 255, .5);
+            font-size: 15px;
+        }
+
+        .hcard-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(109, 197, 186, .1);
+            border: 1px solid rgba(109, 197, 186, .2);
+            border-radius: 10px;
+            padding: 12px 14px;
+        }
+
+        .sdot {
+            width: 9px;
+            height: 9px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: sglow 2s infinite;
+        }
+
+        @keyframes sglow {
+
+            0%,
+            100% {
+                box-shadow: 0 0 0 3px rgba(74, 222, 128, .18)
+            }
+
+            50% {
+                box-shadow: 0 0 0 7px rgba(74, 222, 128, .1)
+            }
+        }
+
+        .hcard-status span {
+            color: rgba(255, 255, 255, .8);
+            font-size: 13px;
+        }
+
+        .rating-pill {
+            position: absolute;
+            top: -16px;
+            right: -16px;
+            background: var(--purple);
+            color: #fff;
+            border-radius: 12px;
+            padding: 11px 14px;
+            font-size: 12px;
+            font-weight: 600;
+            box-shadow: 0 6px 20px rgba(151, 4, 125, .38);
+            animation: float 5.5s ease-in-out infinite reverse;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .rating-pill strong {
+            display: block;
+            font-family: 'Playfair Display', serif;
+            font-size: 21px;
+        }
+
+        /* TRUST BAR */
+        .trust-bar {
+            background: var(--white);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .trust-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            max-width: 1180px;
+            margin: 0 auto;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 26px 28px;
+            border-right: 1px solid var(--border);
+            transition: background .2s;
+        }
+
+        .trust-item:last-child {
+            border-right: none;
+        }
+
+        .trust-item:hover {
+            background: var(--bg);
+        }
+
+        .trust-ic {
+            width: 44px;
+            height: 44px;
+            background: var(--purple-light);
+            border-radius: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .trust-item strong {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .trust-item span {
+            font-size: 12px;
+            color: var(--text-muted);
+        }
+
+        /* SECTIONS */
+        section {
+            padding: 96px 0;
+        }
+
+        .sec-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: var(--purple-light);
+            color: var(--purple);
+            padding: 5px 13px;
+            border-radius: 50px;
+            font-size: 13px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 14px;
+        }
+
+        .sec-title {
+            font-size: clamp(26px, 3.5vw, 40px);
+            color: var(--text);
+            margin-bottom: 14px;
+        }
+
+        .sec-sub {
+            font-size: 15px;
+            color: var(--text-muted);
+            max-width: 540px;
+            line-height: 1.78;
+        }
+
+        /* ABOUT */
+        .about {
+            background: var(--bg);
+        }
+
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 72px;
+            align-items: center;
+        }
+
+        .about-imgwrap {
+            position: relative;
+        }
+
+        .about-photo {
+            border-radius: 20px;
+            overflow: hidden;
+            height: 460px;
+        }
+
+        .about-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .afloat1 {
+            position: absolute;
+            bottom: -18px;
+            right: -18px;
+            background: #fff;
+            border-radius: 14px;
+            padding: 15px 20px;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .afloat1 strong {
+            display: block;
+            font-size: 26px;
+            color: var(--purple);
+            font-family: 'Playfair Display', serif;
+        }
+
+        .afloat1 span {
+            font-size: 11px;
+            color: var(--text-muted);
+        }
+
+        .afloat2 {
+            position: absolute;
+            top: -18px;
+            left: -18px;
+            background: var(--teal);
+            color: #fff;
+            border-radius: 14px;
+            padding: 13px 17px;
+            box-shadow: 0 8px 22px rgba(109, 197, 186, .32);
+            text-align: center;
+        }
+
+        .afloat2 strong {
+            display: block;
+            font-size: 21px;
+        }
+
+        .afloat2 span {
+            font-size: 11px;
+            opacity: .85;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            line-height: 1.82;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .about-feats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 11px;
+            margin-top: 26px;
+        }
+
+        .afeat {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 11px 14px;
+            font-size: 15px;
+            font-weight: 500;
+            transition: border-color .2s, box-shadow .2s;
+        }
+
+        .afeat:hover {
+            border-color: var(--purple);
+            box-shadow: 0 3px 12px rgba(151, 4, 125, .08);
+        }
+
+        .adot {
+            width: 7px;
+            height: 7px;
+            background: var(--teal);
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        /* DEPARTMENTS */
+        .services {
+            background: var(--white);
+        }
+
+        .dept-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 22px;
+            margin-top: 52px;
+        }
+
+        .dept-card {
+            background: var(--white);
+            border: 1px solid var(--border);
+            border-radius: 18px;
+            overflow: hidden;
+            transition: transform .32s cubic-bezier(.22, 1, .36, 1), box-shadow .32s;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .dept-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 20px 52px rgba(0, 0, 0, .13);
+            border-color: transparent;
+        }
+
+        .dept-img {
+            position: relative;
+            height: 210px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .dept-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .5s cubic-bezier(.22, 1, .36, 1);
+        }
+
+        .dept-card:hover .dept-img img {
+            transform: scale(1.07);
+        }
+
+        .dept-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(151, 4, 125, .55) 0%, rgba(10, 5, 20, .28) 100%);
+            transition: opacity .3s;
+        }
+
+        .dept-card:hover .dept-img::after {
+            opacity: .75;
+        }
+
+        .dept-num {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 2;
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, .28);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 4px 10px;
+            border-radius: 50px;
+        }
+
+        .dept-arrow {
+            position: absolute;
+            bottom: 14px;
+            right: 14px;
+            z-index: 2;
+            width: 34px;
+            height: 34px;
+            background: var(--purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0;
+            transform: scale(.7);
+            transition: opacity .28s, transform .28s;
+            box-shadow: 0 4px 14px rgba(151, 4, 125, .45);
+        }
+
+        .dept-card:hover .dept-arrow {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .dept-body {
+            padding: 20px 20px 22px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .dept-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--purple-light);
+            color: var(--purple);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 3px 10px;
+            border-radius: 50px;
+            margin-bottom: 10px;
+            width: fit-content;
+        }
+
+        .dept-body h3 {
+            font-size: 19px;
+            color: var(--text);
+            margin-bottom: 9px;
+            line-height: 1.3;
+            text-transform: capitalize;
+        }
+
+        .dept-body p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.68;
+            margin-bottom: 16px;
+            flex: 1;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+
+        .dept-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--purple);
+            text-transform: uppercase;
+            letter-spacing: .8px;
+            margin-top: auto;
+            transition: gap .2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .dept-card:hover .dept-link {
+            gap: 10px;
+        }
+
+        .dept-link svg {
+            transition: transform .2s;
+        }
+
+        .dept-card:hover .dept-link svg {
+            transform: translateX(3px);
+        }
+
+        /* =============================================
+           DEPARTMENT MODAL
+        ============================================= */
+
+        /* DOCTOR CARDS IN MODAL */
+        .dept-modal-doctors {
+            margin-bottom: 22px;
+        }
+
+        .dept-modal-doctors h4 {
+            font-size: 15px;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 12px;
+            letter-spacing: .3px;
+        }
+
+        .dept-doctors-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 10px;
+        }
+
+        .dept-doctor-card {
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 14px 12px;
+            text-align: center;
+            transition: border-color .2s, box-shadow .2s;
+        }
+
+        .dept-doctor-card:hover {
+            border-color: var(--purple);
+            box-shadow: 0 4px 14px rgba(151, 4, 125, .08);
+        }
+
+        .dept-doctor-av {
+            width: 100px;
+            height: 100px;
+            margin: 0 auto 10px;
+            overflow: hidden;
+            background: var(--purple-light);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: 2px solid var(--purple-light);
+        }
+
+        .dept-doctor-av img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .dept-doctor-av span {
+            font-family: 'Playfair Display', serif;
+            font-size: 20px;
+            color: var(--purple);
+            font-weight: 700;
+        }
+
+        .dept-doctor-card strong {
+            display: block;
+            font-size: 14px;
+            font-weight: 700;
+            color: var(--text);
+            line-height: 1.3;
+            margin-bottom: 3px;
+        }
+
+        .dept-doctor-card small {
+            display: block;
+            font-size: 12px;
+            color: var(--text-muted);
+            line-height: 1.4;
+            margin-bottom: 4px;
+        }
+
+        .dept-doctor-role {
+            display: inline-block;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            text-transform: uppercase;
+            color: var(--purple);
+            background: var(--purple-light);
+            padding: 2px 8px;
+            border-radius: 50px;
+        }
+
+        .dept-modal-overlay {
+            position: fixed;
+            inset: 0;
+            z-index: 10000;
+            background: rgba(10, 5, 20, .72);
+            backdrop-filter: blur(6px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .3s ease;
+        }
+
+        .dept-modal-overlay.open {
+            opacity: 1;
+            pointer-events: all;
+        }
+
+        .dept-modal {
+            background: #fff;
+            border-radius: 22px;
+            overflow: hidden;
+            max-width: 980px;
+            width: 100%;
+            max-height: 90vh;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 32px 80px rgba(0, 0, 0, .3);
+            transform: translateY(30px) scale(.97);
+            transition: transform .35s cubic-bezier(.22, 1, .36, 1);
+        }
+
+        .dept-modal-overlay.open .dept-modal {
+            transform: translateY(0) scale(1);
+        }
+
+        .dept-modal-hero {
+            position: relative;
+            height: 240px;
+            flex-shrink: 0;
+            overflow: hidden;
+        }
+
+        .dept-modal-hero img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .dept-modal-hero::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(151, 4, 125, .6) 0%, rgba(10, 5, 20, .45) 100%);
+        }
+
+        .dept-modal-hero-content {
+            position: absolute;
+            bottom: 20px;
+            left: 24px;
+            z-index: 2;
+        }
+
+        .dept-modal-hero-content .dept-tag {
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, .28);
+            color: #fff;
+            margin-bottom: 8px;
+        }
+
+        .dept-modal-hero-content h2 {
+            color: #fff;
+            font-size: clamp(20px, 3vw, 26px);
+            text-shadow: 0 2px 8px rgba(0, 0, 0, .3);
+            text-transform: capitalize;
+        }
+
+        .dept-modal-close {
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            z-index: 3;
+            width: 36px;
+            height: 36px;
+            background: rgba(255, 255, 255, .15);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, .25);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: #fff;
+            transition: background .2s, transform .2s;
+        }
+
+        .dept-modal-close:hover {
+            background: rgba(255, 255, 255, .28);
+            transform: scale(1.1);
+        }
+
+        .dept-modal-body {
+            padding: 28px 28px 32px;
+            overflow-y: auto;
+            flex: 1;
+        }
+
+        .dept-modal-body p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.82;
+            margin-bottom: 20px;
+        }
+
+        .dept-modal-features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+            margin-bottom: 26px;
+        }
+
+        .dept-modal-feat {
+            display: flex;
+            align-items: center;
+            gap: 9px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            padding: 11px 13px;
+            font-size: 13px;
+            font-weight: 500;
+        }
+
+        .dept-modal-feat .adot {
+            background: var(--teal);
+            flex-shrink: 0;
+        }
+
+        .dept-modal-footer {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .dept-modal-num-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--purple-light);
+            color: var(--purple);
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            padding: 4px 12px;
+            border-radius: 50px;
+            margin-bottom: 16px;
+        }
+
+        @media(max-width:580px) {
+            .dept-modal-features {
+                grid-template-columns: 1fr;
+            }
+
+            .dept-modal-body {
+                padding: 20px 18px 24px;
+            }
+
+            .dept-modal-hero {
+                height: 180px;
+            }
+        }
+
+        /* WHY */
+        .why {
+            background: var(--bg);
+        }
+
+        .why-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .why-reasons {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 13px;
+            margin-top: 34px;
+        }
+
+        .why-r {
+            display: flex;
+            gap: 11px;
+            background: #fff;
+            border-radius: 10px;
+            padding: 14px;
+            border: 1px solid var(--border);
+            transition: all .2s;
+        }
+
+        .why-r:hover {
+            border-color: var(--teal);
+            box-shadow: 0 4px 14px rgba(109, 197, 186, .12);
+        }
+
+        .why-tick {
+            width: 30px;
+            height: 30px;
+            background: var(--teal);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .why-r p {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text);
+        }
+
+        .why-stats {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 14px;
+        }
+
+        .wstat {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 28px;
+            text-align: center;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            transition: transform .3s;
+        }
+
+        .wstat:hover {
+            transform: translateY(-4px);
+        }
+
+        .wstat:nth-child(1) {
+            background: var(--purple);
+            border-color: var(--purple);
+        }
+
+        .wstat:nth-child(2) {
+            background: var(--teal);
+            border-color: var(--teal);
+        }
+
+        .wstat:nth-child(1) strong,
+        .wstat:nth-child(2) strong {
+            color: #fff;
+        }
+
+        .wstat:nth-child(1) span,
+        .wstat:nth-child(2) span {
+            color: rgba(255, 255, 255, .78);
+        }
+
+        .wstat:nth-child(3) strong,
+        .wstat:nth-child(4) strong {
+            color: var(--purple);
+        }
+
+        .wstat strong {
+            font-family: 'Playfair Display', serif;
+            font-size: 34px;
+            display: block;
+        }
+
+        .wstat span {
+            font-size: 13px;
+        }
+
+        /* TESTIMONIALS */
+        .testimonials {
+            background: var(--white);
+            overflow: hidden;
+        }
+
+        .test-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-bottom: 40px;
+        }
+
+        .test-track {
+            display: flex;
+            gap: 20px;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory;
+            scrollbar-width: none;
+            padding-bottom: 6px;
+        }
+
+        .test-track::-webkit-scrollbar {
+            display: none;
+        }
+
+        .tcard {
+            min-width: 330px;
+            background: var(--bg);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px;
+            scroll-snap-align: start;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tcard::before {
+            content: '"';
+            position: absolute;
+            top: 10px;
+            right: 18px;
+            font-family: 'Playfair Display', serif;
+            font-size: 68px;
+            color: var(--purple);
+            opacity: .06;
+            line-height: 1;
+        }
+
+        .tstars {
+            display: flex;
+            gap: 3px;
+            margin-bottom: 13px;
+        }
+
+        .tcard p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.72;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .tauthor {
+            display: flex;
+            align-items: center;
+            gap: 11px;
+        }
+
+        .tav {
+            width: 38px;
+            height: 38px;
+            background: var(--purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 700;
+            font-size: 17px;
+        }
+
+        .tauthor strong {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+        }
+
+        .tauthor span {
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .tnav {
+            display: flex;
+            gap: 9px;
+        }
+
+        .tnav button {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 1px solid var(--border);
+            background: #fff;
+            cursor: pointer;
+            color: var(--text);
+            transition: all .2s;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .tnav button:hover {
+            background: var(--purple);
+            color: #fff;
+            border-color: var(--purple);
+        }
+
+        /* FACILITIES */
+        .facilities {
+            background: var(--bg);
+        }
+
+        .fac-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 17px;
+            margin-top: 42px;
+        }
+
+        .fcard {
+            background: #fff;
+            border-radius: var(--radius);
+            padding: 26px 20px;
+            text-align: center;
+            border: 1px solid var(--border);
+            transition: all .3s;
+        }
+
+        .fcard:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--teal);
+        }
+
+        .fcard-ic {
+            width: 50px;
+            height: 50px;
+            background: var(--teal-light);
+            border-radius: 13px;
+            margin: 0 auto 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .fcard h3 {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .fcard p {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.62;
+        }
+
+        /* CTA */
+        .cta-sec {
+            background: var(--purple);
+            padding: 96px 0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .cta-sec::before {
+            content: '';
+            position: absolute;
+            right: -80px;
+            top: -80px;
+            width: 380px;
+            height: 380px;
+            background: var(--purple-dark);
+            border-radius: 50%;
+            opacity: .45;
+        }
+
+        .cta-sec::after {
+            content: '';
+            position: absolute;
+            left: -60px;
+            bottom: -60px;
+            width: 280px;
+            height: 280px;
+            background: var(--purple-dark);
+            border-radius: 50%;
+            opacity: .4;
+        }
+
+        .cta-inner {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .cta-inner h2 {
+            font-size: clamp(26px, 4vw, 44px);
+            color: #fff;
+            margin-bottom: 14px;
+        }
+
+        .cta-inner p {
+            font-size: 17px;
+            color: rgba(255, 255, 255, .72);
+            margin-bottom: 34px;
+        }
+
+        .cta-btns {
+            display: flex;
+            gap: 14px;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 54px;
+            margin-top: 50px;
+        }
+
+        .cinfo-item {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 22px;
+        }
+
+        .cinfo-ic {
+            width: 44px;
+            height: 44px;
+            background: var(--purple-light);
+            border-radius: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .cinfo-item strong {
+            display: block;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 3px;
+        }
+
+        .cinfo-item span {
+            font-size: 15px;
+            color: var(--text-muted);
+            line-height: 1.55;
+        }
+
+        .mapbox {
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 1px solid var(--border);
+            height: 200px;
+            margin-top: 22px;
+        }
+
+        .mapbox iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+            display: block;
+        }
+
+        .cform {
+            background: var(--bg);
+            border-radius: var(--radius);
+            padding: 34px;
+            border: 1px solid var(--border);
+        }
+
+        .cform h3 {
+            font-size: 23px;
+            margin-bottom: 22px;
+        }
+
+        .fg {
+            margin-bottom: 15px;
+        }
+
+        .fg label {
+            display: block;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: var(--text);
+            letter-spacing: .3px;
+        }
+
+        .fg input,
+        .fg textarea {
+            width: 100%;
+            padding: 12px 14px;
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 9px;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            color: var(--text);
+            outline: none;
+            transition: border-color .2s, box-shadow .2s;
+        }
+
+        .fg input:focus,
+        .fg textarea:focus {
+            border-color: var(--purple);
+            box-shadow: 0 0 0 3px rgba(151, 4, 125, .08);
+        }
+
+        .fg textarea {
+            min-height: 96px;
+            resize: vertical;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #0d001a;
+            color: rgba(255, 255, 255, .6);
+            padding: 60px 0 26px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1.5fr;
+            gap: 44px;
+            margin-bottom: 44px;
+        }
+
+        .fbrand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 22px;
+            color: #fff;
+            display: block;
+            margin-top: 13px;
+        }
+
+        .fbrand-sub {
+            font-size: 13px;
+            color: rgba(255, 255, 255, .3);
+            display: block;
+        }
+
+        .fbrand p {
+            font-size: 15px;
+            line-height: 1.75;
+            color: rgba(255, 255, 255, .42);
+            max-width: 245px;
+            margin-top: 11px;
+        }
+
+        .fphone {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            margin-top: 16px;
+            font-size: 15px;
+            font-weight: 600;
+            color: var(--teal);
+        }
+
+        footer h4 {
+            font-size: 17px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: #fff;
+            margin-bottom: 16px;
+        }
+
+        .flinks {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+
+        .flinks a {
+            font-size: 15px;
+            color: rgba(255, 255, 255, .42);
+            transition: color .2s;
+        }
+
+        .flinks a:hover {
+            color: var(--teal);
+        }
+
+        .fcontact-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .fcontact-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 9px;
+            font-size: 15px;
+            color: rgba(255, 255, 255, .42);
+        }
+
+        .fcontact-list a {
+            color: var(--teal);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, .07);
+            padding-top: 22px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 16px;
+            color: rgba(255, 255, 255, .28);
+        }
+
+        /* STICKY */
+        .sticky-wrap {
+            position: fixed;
+            bottom: 26px;
+            right: 26px;
+            z-index: 9999;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 9px;
+        }
+
+        .sticky-btn {
+            width: 54px;
+            height: 54px;
+            background: var(--purple);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 24px rgba(151, 4, 125, .42);
+            cursor: pointer;
+            text-decoration: none;
+            transition: transform .3s;
+            animation: sring 3s infinite;
+        }
+
+        .sticky-btn:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes sring {
+
+            0%,
+            100% {
+                box-shadow: 0 6px 24px rgba(151, 4, 125, .42)
+            }
+
+            50% {
+                box-shadow: 0 6px 32px rgba(151, 4, 125, .6), 0 0 0 10px rgba(151, 4, 125, .1)
+            }
+        }
+
+        .sticky-lbl {
+            background: #fff;
+            border-radius: 7px;
+            padding: 7px 12px;
+            font-size: 12px;
+            font-weight: 600;
+            color: var(--text);
+            box-shadow: 0 4px 14px rgba(0, 0, 0, .12);
+            white-space: nowrap;
+            opacity: 0;
+            transform: translateX(8px);
+            transition: all .2s;
+            pointer-events: none;
+        }
+
+        .sticky-wrap:hover .sticky-lbl {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        /* ANIMS */
+        .fi {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity .6s, transform .6s;
+        }
+
+        .fil {
+            opacity: 0;
+            transform: translateX(-26px);
+            transition: opacity .6s, transform .6s;
+        }
+
+        .fir {
+            opacity: 0;
+            transform: translateX(26px);
+            transition: opacity .6s, transform .6s;
+        }
+
+        .fi.vis,
+        .fil.vis,
+        .fir.vis {
+            opacity: 1;
+            transform: none;
+        }
+
+        svg.si {
+            display: block;
+        }
+
+        /* RESPONSIVE */
+        @media(max-width:1024px) {
+            .hero-inner {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .hero-sub {
+                max-width: 100%;
+            }
+
+            .hero-btns {
+                justify-content: center;
+            }
+
+            .hero-checks {
+                align-items: center;
+            }
+
+            .hero-card-wrap {
+                justify-content: center;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+                gap: 48px;
+            }
+
+            .dept-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .why-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .fac-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+
+            .trust-row {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .trust-item:nth-child(2) {
+                border-right: none;
+            }
+        }
+
+        @media(max-width:768px) {
+
+            .nav-links,
+            .nav-right .btn {
+                display: none;
+            }
+
+            .hamburger {
+                display: flex;
+            }
+
+            section {
+                padding: 60px 0;
+            }
+
+            .dept-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 16px;
+            }
+
+            .dept-img {
+                height: 160px;
+            }
+
+            .why-reasons {
+                grid-template-columns: 1fr;
+            }
+
+            .why-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 26px;
+            }
+
+            .footer-bottom {
+                flex-direction: column;
+                gap: 6px;
+                text-align: center;
+            }
+
+            .about-feats {
+                grid-template-columns: 1fr;
+            }
+
+            .test-top {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 14px;
+            }
+
+            .hero-card {
+                max-width: 340px;
+            }
+        }
+
+        @media(max-width:480px) {
+            .trust-row {
+                grid-template-columns: 1fr;
+            }
+
+            .trust-item {
+                border-right: none;
+                border-bottom: 1px solid var(--border);
+            }
+
+            .hcard-stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .fac-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .dept-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- DEPARTMENT MODAL -->
+    <div class="dept-modal-overlay" id="deptModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="dept-modal">
+            <div class="dept-modal-hero">
+                <img id="modalImg" src="" alt="">
+                <button class="dept-modal-close" onclick="closeModal()" aria-label="Close">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round">
+                        <line x1="18" y1="6" x2="6" y2="18" />
+                        <line x1="6" y1="6" x2="18" y2="18" />
+                    </svg>
+                </button>
+                <div class="dept-modal-hero-content">
+                    <div class="dept-tag" id="modalTag"></div>
+                    <h2 id="modalTitle"></h2>
+                </div>
+            </div>
+            <div class="dept-modal-body">
+                <div class="dept-modal-num-badge" id="modalNum"></div>
+                <p id="modalDesc"></p>
+                <div class="dept-modal-doctors" id="modalDoctors"></div>
+                <div class="dept-modal-features" id="modalFeatures"></div>
+                <div class="dept-modal-footer">
+                    <a href="#contact" class="btn btn-primary" onclick="closeModal()">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="3" y="4" width="18" height="18" rx="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" />
+                            <line x1="8" y1="2" x2="8" y2="6" />
+                            <line x1="3" y1="10" x2="21" y2="10" />
+                        </svg>
+                        Book Appointment
+                    </a>
+                    <a href="tel:+919497072222" class="btn btn-outline">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        Call Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAV -->
+    <nav id="nav">
+        <div class="nav-inner">
+            <a href="#" class="nav-logo"><img src="./index_files/carelogo.png" alt="Carecraft Hospital"></a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#why">Why Us</a>
+                <a href="#testimonials">Reviews</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <div class="nav-right">
+                <a href="tel:+919497072222" class="nav-tel">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    +91 94970 72222
+                </a>
+                <a href="#contact" class="btn btn-primary" style="padding:10px 20px;font-size:14px;">Book
+                    Appointment</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+    <div class="mobile-menu" id="mMenu">
+        <a href="#about" onclick="closeMenu()">About</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
+        <a href="#why" onclick="closeMenu()">Why Us</a>
+        <a href="#testimonials" onclick="closeMenu()">Reviews</a>
+        <a href="#contact" onclick="closeMenu()">Contact</a>
+        <a href="tel:+919497072222" class="btn btn-primary" style="color: white;">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+            Call Now
+        </a>
+        <a href="#contact" class="btn btn-outline" onclick="closeMenu()">Book Appointment</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-img">
+            <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1800&q=80"
+                alt="Modern hospital interior" loading="eager">
+        </div>
+        <div class="hero-dim"></div>
+        <div class="hero-inner">
+            <div>
+                <div class="hero-badge">
+                    <div class="badge-dot"></div>Haripad's Trusted Hospital
+                </div>
+                <h1>Compassionate Healthcare<br><em>You Can Trust</em></h1>
+                <p class="hero-sub">Providing quality medical care, advanced treatments, and patient-focused services
+                    for the Haripad community — 24 hours a day, every day.</p>
+                <div class="hero-btns">
+                    <a href="tel:+919497072222" class="btn btn-white">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>
+                        Call Now
+                    </a>
+                    <a href="#contact" class="btn btn-outline-white">Book Appointment</a>
+                </div>
+                <div class="hero-checks">
+                    <div class="hcheck">
+                        <div class="hcheck-ic"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="#6DC5BA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg></div>24/7 Emergency Care
+                    </div>
+                    <div class="hcheck">
+                        <div class="hcheck-ic"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="#6DC5BA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg></div>Experienced Doctors
+                    </div>
+                    <div class="hcheck">
+                        <div class="hcheck-ic"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="#6DC5BA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg></div>Advanced Physiotherapy
+                    </div>
+                    <div class="hcheck">
+                        <div class="hcheck-ic"><svg width="10" height="10" viewBox="0 0 24 24" fill="none"
+                                stroke="#6DC5BA" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                <polyline points="20 6 9 17 4 12" />
+                            </svg></div>Patient-First Treatment
+                    </div>
+                </div>
+            </div>
+            <div class="hero-card-wrap">
+                <div class="rating-pill"><strong>4.0 ★</strong>Google Rating</div>
+                <div class="hero-card">
+                    <div class="hcard-top">
+                        <div class="hcard-av"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+                                <polyline points="9 22 9 12 15 12 15 22" />
+                            </svg></div>
+                        <div><strong>Carecraft Hospital</strong><span>Multi-Speciality · Haripad</span></div>
+                    </div>
+                    <div class="hcard-stats">
+                        <div class="hcard-stat"><strong>24/7</strong><span>Emergency Care</span></div>
+                        <div class="hcard-stat"><strong>7+</strong><span>Specialties</span></div>
+                        <div class="hcard-stat"><strong>4.0★</strong><span>Google Rating</span></div>
+                        <div class="hcard-stat"><strong>100%</strong><span>Dedicated Care</span></div>
+                    </div>
+                    <div class="hcard-status">
+                        <div class="sdot"></div><span><strong>Open Now</strong> · Available around the clock</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TRUST BAR -->
+    <div class="trust-bar">
+        <div class="trust-row">
+            <div class="trust-item fi">
+                <div class="trust-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#97047D"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <polygon
+                            points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                    </svg></div>
+                <div><strong>4.0 Google Rating</strong><span>Trusted by patients</span></div>
+            </div>
+            <div class="trust-item fi">
+                <div class="trust-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#97047D"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                        <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                    </svg></div>
+                <div><strong>Experienced Doctors</strong><span>Qualified medical team</span></div>
+            </div>
+            <div class="trust-item fi">
+                <div class="trust-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#97047D"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="3" width="18" height="18" rx="2" />
+                        <path d="M3 9h18M9 21V9" />
+                    </svg></div>
+                <div><strong>Modern Facilities</strong><span>Advanced medical equipment</span></div>
+            </div>
+            <div class="trust-item fi">
+                <div class="trust-ic"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#97047D"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10" />
+                        <polyline points="12 6 12 12 16 14" />
+                    </svg></div>
+                <div><strong>Open 24 Hours</strong><span>Always here for you</span></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-imgwrap fil">
+                    <div class="about-photo">
+                        <img src="https://lh3.googleusercontent.com/gps-cs-s/AHVAwep5bc8mjLF7wQnliI8uvaTTL9_IHWCZnt9UPrNJgL6_c1tmrQJ4nh1AB1OaX_dT2E6_JcNQh_wacupDr4T17Xs1vLMdeQNlrL4825Xdg56MbYrc-1Dmli1ZylmhXADCmxtulTtplg=s1360-w1360-h1020-rw"
+                            alt="Carecraft Hospital" loading="lazy">
+                    </div>
+                    <div class="afloat1"><strong>4.0★</strong><span>Google Rating</span></div>
+                    <div class="afloat2"><strong>24/7</strong><span>Always Open</span></div>
+                </div>
+                <div class="fir">
+                    <div class="sec-label">About Us</div>
+                    <h2 class="sec-title">Haripad's Trusted Center for Modern Healthcare</h2>
+                    <p class="about-text">Carecraft Hospital is committed to delivering reliable, compassionate
+                        healthcare to the Haripad community. With a dedicated team of medical professionals and modern
+                        treatment facilities, we focus on providing personalized care for every patient.</p>
+                    <p>Our mission is to combine medical expertise with genuine compassion — ensuring every patient
+                        receives the best possible treatment experience in a safe, comfortable environment.</p>
+                    <div class="about-feats">
+                        <div class="afeat">
+                            <div class="adot"></div>Qualified Medical Staff
+                        </div>
+                        <div class="afeat">
+                            <div class="adot"></div>Advanced Equipment
+                        </div>
+                        <div class="afeat">
+                            <div class="adot"></div>Compassionate Care
+                        </div>
+                        <div class="afeat">
+                            <div class="adot"></div>24/7 Availability
+                        </div>
+                        <div class="afeat">
+                            <div class="adot"></div>Physiotherapy Unit
+                        </div>
+                        <div class="afeat">
+                            <div class="adot"></div>Emergency Services
+                        </div>
+                    </div>
+                    <div style="margin-top:30px;"><a href="#contact" class="btn btn-primary">Book an Appointment</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES / DEPARTMENTS -->
+    <section class="services" id="services">
+        <div class="container">
+            <div style="text-align:center;">
+                <div class="sec-label fi">Our Departments</div>
+                <h2 class="sec-title fi">Comprehensive Medical Care</h2>
+                <p class="sec-sub fi" style="margin:0 auto;">From emergency care to specialist treatments — quality
+                    healthcare services under one roof.</p>
+            </div>
+            <div class="dept-grid">
+
+                <!-- 1 · Orthopaedic -->
+                <div class="dept-card fi" onclick="openModal(0)">
+                    <div class="dept-img">
+                        <span class="dept-num">01</span>
+                        <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80"
+                            alt="Orthopaedics" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">Orthopaedics</span>
+                        <h3>Department of Orthopaedics</h3>
+                        <p>World-class orthopaedic care — diagnosing and treating bone, joint, and muscle conditions
+                            with advanced technology and personalized care.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- 2 · General Surgery -->
+                <div class="dept-card fi" onclick="openModal(1)">
+                    <div class="dept-img">
+                        <span class="dept-num">02</span>
+                        <img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=600&q=80"
+                            alt="General Surgery" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">Surgery</span>
+                        <h3>Department of General Surgery</h3>
+                        <p>Expert surgical care for a wide range of conditions — equipped with advanced technology and a
+                            skilled surgical team providing safe, effective procedures.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- 3 · ENT -->
+                <div class="dept-card fi" onclick="openModal(2)">
+                    <div class="dept-img">
+                        <span class="dept-num">03</span>
+                        <img src="https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=600&q=80"
+                            alt="ENT" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">E.N.T</span>
+                        <h3>Department of E.N.T</h3>
+                        <p>Comprehensive care for ear, nose, and throat conditions using advanced diagnostic tools —
+                            addressing hearing issues, sinus problems, throat disorders, and more.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- 4 · Urology -->
+                <div class="dept-card fi" onclick="openModal(3)">
+                    <div class="dept-img">
+                        <span class="dept-num">04</span>
+                        <img src="https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=600&q=80"
+                            alt="Urology" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">Urology</span>
+                        <h3>Department of Urology</h3>
+                        <p>Expert care for urinary and reproductive health — advanced diagnostics and treatments for
+                            kidney stones, prostate issues, urinary tract disorders, and more.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- 5 · General Medicine -->
+                <div class="dept-card fi" onclick="openModal(4)">
+                    <div class="dept-img">
+                        <span class="dept-num">05</span>
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=600&q=80"
+                            alt="General Medicine" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">General Medicine</span>
+                        <h3>Department of General Medicine</h3>
+                        <p>Comprehensive care for a wide range of medical conditions — experienced physicians focused on
+                            accurate diagnosis, effective treatment, and preventive care.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- 6 · Dermatology -->
+                <div class="dept-card fi" onclick="openModal(5)">
+                    <div class="dept-img">
+                        <span class="dept-num">06</span>
+                        <img src="https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&fit=crop&w=600&q=80"
+                            alt="Dermatology" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">Dermatology</span>
+                        <h3>Department of Dermatology</h3>
+                        <p>Expert care for all skin, hair, and nail concerns — advanced treatments for acne, eczema,
+                            psoriasis, and skin allergies with personalized solutions.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+                <!-- 7 · Psychiatry -->
+                <div class="dept-card fi" onclick="openModal(6)">
+                    <div class="dept-img">
+                        <span class="dept-num">07</span>
+                        <img src="https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=600&q=80"
+                            alt="Psychiatry" loading="lazy">
+                        <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></div>
+                    </div>
+                    <div class="dept-body">
+                        <span class="dept-tag">Psychiatry</span>
+                        <h3>Department of Psychiatry</h3>
+                        <p>Compassionate mental health care for all ages — treating anxiety, depression, stress, and
+                            other conditions with personalized therapy and evidence-based treatments.</p>
+                        <button class="dept-link">Explore <svg width="13" height="13" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE -->
+    <section class="why" id="why">
+        <div class="container">
+            <div class="why-grid">
+                <div class="fil">
+                    <div class="sec-label">Why Choose Us</div>
+                    <h2 class="sec-title">Healthcare Built on Care &amp; Compassion</h2>
+                    <p class="sec-sub">We go beyond medicine — creating a healing environment where patients feel safe,
+                        heard, and genuinely cared for.</p>
+                    <div class="why-reasons">
+                        <div class="why-r">
+                            <div class="why-tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Experienced medical professionals</p>
+                        </div>
+                        <div class="why-r">
+                            <div class="why-tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Modern treatment facilities</p>
+                        </div>
+                        <div class="why-r">
+                            <div class="why-tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Patient-centered care</p>
+                        </div>
+                        <div class="why-r">
+                            <div class="why-tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Trusted by local community</p>
+                        </div>
+                        <div class="why-r">
+                            <div class="why-tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>Comfortable medical environment</p>
+                        </div>
+                        <div class="why-r">
+                            <div class="why-tick"><svg width="12" height="12" viewBox="0 0 24 24" fill="none"
+                                    stroke="#fff" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12" />
+                                </svg></div>
+                            <p>24/7 medical support</p>
+                        </div>
+                    </div>
+                    <div style="margin-top:30px;"><a href="tel:+919497072222" class="btn btn-primary"><svg width="14"
+                                height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg>+91 94970 72222</a></div>
+                </div>
+                <div class="why-stats fir">
+                    <div class="wstat"><strong>24/7</strong><span>Emergency Support</span></div>
+                    <div class="wstat"><strong>4.0★</strong><span>Google Rated</span></div>
+                    <div class="wstat"><strong>7+</strong><span>Medical Specialties</span></div>
+                    <div class="wstat"><strong>100%</strong><span>Patient Dedication</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials" id="testimonials">
+        <div class="container">
+            <div class="test-top fi">
+                <div>
+                    <div class="sec-label">Patient Reviews</div>
+                    <h2 class="sec-title">What Our Patients Say</h2>
+                </div>
+                <div class="tnav">
+                    <button onclick="scrollTest(-1)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="15 18 9 12 15 6" />
+                        </svg></button>
+                    <button onclick="scrollTest(1)"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 18 15 12 9 6" />
+                        </svg></button>
+                </div>
+            </div>
+            <div class="test-track" id="ttrack">
+                <div class="tcard">
+                    <div class="tstars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg></div>
+                    <p>"Excellent facilities and very friendly doctors. The staff were attentive and professional
+                        throughout my entire treatment. I felt truly cared for."</p>
+                    <div class="tauthor">
+                        <div class="tav">R</div>
+                        <div><strong>Rajesh Kumar</strong><span>Orthopedic Patient, Haripad</span></div>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="tstars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg></div>
+                    <p>"The physiotherapy treatment was outstanding. Highly recommended for anyone recovering from
+                        injuries. Remarkable improvement in just a few weeks."</p>
+                    <div class="tauthor">
+                        <div class="tav">S</div>
+                        <div><strong>Sunitha Menon</strong><span>Physiotherapy Patient</span></div>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="tstars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#E5E7EB">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg></div>
+                    <p>"Professional staff and caring treatment. When we arrived for an emergency late at night, the
+                        team responded immediately and put our whole family at ease."</p>
+                    <div class="tauthor">
+                        <div class="tav">A</div>
+                        <div><strong>Arun Pillai</strong><span>Emergency Care Patient</span></div>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="tstars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg></div>
+                    <p>"Very clean and modern hospital. The doctors explained everything clearly and the treatment was
+                        tailored specifically to my needs. Truly patient-first."</p>
+                    <div class="tauthor">
+                        <div class="tav">M</div>
+                        <div><strong>Meera Nair</strong><span>General Patient, Kayamkulam</span></div>
+                    </div>
+                </div>
+                <div class="tcard">
+                    <div class="tstars"><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#F59E0B">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg><svg width="14" height="14" viewBox="0 0 24 24" fill="#E5E7EB">
+                            <polygon
+                                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                        </svg></div>
+                    <p>"My mother received excellent rehabilitation care after her surgery. The physiotherapists were
+                        skilled and compassionate. Our whole family is grateful."</p>
+                    <div class="tauthor">
+                        <div class="tav">V</div>
+                        <div><strong>Vishnu Das</strong><span>Family Member, Haripad</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FACILITIES -->
+    <section class="facilities" id="facilities">
+        <div class="container">
+            <div style="text-align:center;">
+                <div class="sec-label fi">Our Facilities</div>
+                <h2 class="sec-title fi">A Healing Environment</h2>
+                <p class="sec-sub fi" style="margin:0 auto;">Every aspect of Carecraft Hospital is designed to support
+                    healing, comfort, and patient confidence.</p>
+            </div>
+            <div class="fac-grid">
+                <div class="fcard fi">
+                    <div class="fcard-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4fa89c"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="7" width="20" height="14" rx="2" />
+                            <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2" />
+                        </svg></div>
+                    <h3>Modern Treatment Rooms</h3>
+                    <p>Well-equipped rooms designed for comfort and clinical efficiency.</p>
+                </div>
+                <div class="fcard fi">
+                    <div class="fcard-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4fa89c"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg></div>
+                    <h3>Comfortable Patient Care</h3>
+                    <p>Patient-friendly spaces prioritizing rest, privacy, and calm recovery.</p>
+                </div>
+                <div class="fcard fi">
+                    <div class="fcard-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4fa89c"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                            <circle cx="9" cy="7" r="4" />
+                            <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                        </svg></div>
+                    <h3>Qualified Medical Staff</h3>
+                    <p>Experienced doctors, nurses, and specialists committed to your wellbeing.</p>
+                </div>
+                <div class="fcard fi">
+                    <div class="fcard-ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#4fa89c"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="9 11 12 14 22 4" />
+                            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11" />
+                        </svg></div>
+                    <h3>Clean &amp; Safe Environment</h3>
+                    <p>Strict hygiene protocols and sanitation standards maintained throughout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-sec">
+        <div class="container">
+            <div class="cta-inner fi">
+                <div class="sec-label"
+                    style="background:rgba(255,255,255,.14);color:#fff;margin:0 auto 18px;width:fit-content;">We're Here
+                    For You</div>
+                <h2>Need Medical Assistance?</h2>
+                <p>Our medical team is available 24 hours a day to help you and your family.</p>
+                <div class="cta-btns">
+                    <a href="tel:+919497072222" class="btn btn-white"><svg width="15" height="15" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"
+                            stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>Call Hospital</a>
+                    <a href="https://maps.google.com/?q=Carecraft+Hospital+Haripad+Kerala" target="_blank"
+                        class="btn btn-outline-white"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Get Directions</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div style="text-align:center;">
+                <div class="sec-label fi">Get in Touch</div>
+                <h2 class="sec-title fi">Contact Carecraft Hospital</h2>
+                <p class="sec-sub fi" style="margin:0 auto;">Reach out for appointments, inquiries, or medical guidance.
+                    We're always ready to help.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="fil">
+                    <div class="cinfo-item">
+                        <div class="cinfo-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="#97047D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg></div>
+                        <div><strong>Hospital Address</strong><span>7CMR+M42, Nedumudy Kruvata Rd, Danapady
+                                Rd,<br>Haripad, Kerala 690548, India</span></div>
+                    </div>
+                    <div class="cinfo-item">
+                        <div class="cinfo-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="#97047D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg></div>
+                        <div><strong>Phone Number</strong><span><a href="tel:+919497072222"
+                                    style="color:var(--purple);font-weight:600;">+91 94970 72222</a></span></div>
+                    </div>
+                    <div class="cinfo-item">
+                        <div class="cinfo-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="#97047D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg></div>
+                        <div><strong>Website</strong><span><a href="https://carecrafthospital.com"
+                                    style="color:var(--purple);">carecrafthospital.com</a></span></div>
+                    </div>
+                    <div class="cinfo-item">
+                        <div class="cinfo-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                stroke="#97047D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg></div>
+                        <div><strong>Working Hours</strong><span>Open 24 Hours · 7 Days a Week<br>Including Public
+                                Holidays</span></div>
+                    </div>
+                    <div class="mapbox"><iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3936.8!2d76.4248!3d9.1825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b063e7e25d2c23f%3A0x7e24b64dfcba3fb1!2sHaripad%2C%20Kerala!5e0!3m2!1sen!2sin!4v1"
+                            allowfullscreen="" loading="lazy" title="Carecraft Hospital Location"></iframe></div>
+                </div>
+                <div class="cform fir">
+                    <h3>Send Us an Inquiry</h3>
+                    <form onsubmit="handleForm(event)">
+                        <div class="fg"><label>Your Name</label><input type="text" placeholder="Enter your full name"
+                                required></div>
+                        <div class="fg"><label>Phone Number</label><input type="tel" placeholder="+91 00000 00000"
+                                required></div>
+                        <div class="fg"><label>Department / Service</label><input type="text" id="deptField"
+                                placeholder="e.g. Orthopaedics, ENT, General Surgery..."></div>
+                        <div class="fg"><label>Message</label><textarea
+                                placeholder="Describe your condition or inquiry..."></textarea></div>
+                        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send
+                            Inquiry <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12" />
+                                <polyline points="12 5 19 12 12 19" />
+                            </svg></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="fbrand">
+                    <div class="footer-logo"><img src="./index_files/carelogo.png" alt="Carecraft Hospital Logo"></div>
+                    <span class="fbrand-sub">Haripad, Kerala · Multi-Speciality</span>
+                    <p>Compassionate, modern healthcare for the Haripad community. Available 24 hours, every day.</p>
+                    <div class="fphone"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path
+                                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                        </svg>+91 94970 72222</div>
+                </div>
+                <div>
+                    <h4>Quick Links</h4>
+                    <ul class="flinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#why">Why Choose Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Departments</h4>
+                    <ul class="flinks">
+                        <li><a href="#services" onclick="openModal(0);return false;">Orthopaedics</a></li>
+                        <li><a href="#services" onclick="openModal(1);return false;">General Surgery</a></li>
+                        <li><a href="#services" onclick="openModal(2);return false;">E.N.T</a></li>
+                        <li><a href="#services" onclick="openModal(3);return false;">Urology</a></li>
+                        <li><a href="#services" onclick="openModal(4);return false;">General Medicine</a></li>
+                        <li><a href="#services" onclick="openModal(5);return false;">Dermatology</a></li>
+                        <li><a href="#services" onclick="openModal(6);return false;">Psychiatry</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Contact Info</h4>
+                    <ul class="fcontact-list">
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6DC5BA"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="flex-shrink:0;margin-top:4px;">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                                <circle cx="12" cy="10" r="3" />
+                            </svg><span>7CMR+M42, Nedumudy Kruvata Rd, Haripad, Kerala 690548</span></li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6DC5BA"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="flex-shrink:0;margin-top:4px;">
+                                <path
+                                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                            </svg><a href="tel:+919497072222">+91 94970 72222</a></li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6DC5BA"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="flex-shrink:0;margin-top:4px;">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg><span>Open 24 Hours, 7 Days</span></li>
+                        <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6DC5BA"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                style="flex-shrink:0;margin-top:4px;">
+                                <circle cx="12" cy="12" r="10" />
+                                <line x1="2" y1="12" x2="22" y2="12" />
+                                <path
+                                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                            </svg><a href="https://carecrafthospital.com">carecrafthospital.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2025 Carecraft Hospital – Haripad. All rights reserved.</span>
+                <a href="https://carecrafthospital.com" style="color:rgba(255,255,255,.3);">carecrafthospital.com</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- STICKY CALL -->
+    <div class="sticky-wrap">
+        <div class="sticky-lbl">Call: +91 94970 72222</div>
+        <a href="tel:+919497072222" class="sticky-btn" title="Call Carecraft Hospital">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+            </svg>
+        </a>
+    </div>
+
+    <script>
+        const departments = [
+            {
+                num: '01', tag: 'Orthopaedics',
+                title: 'Department of Orthopaedics',
+                img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80',
+                desc: 'Discover world-class orthopaedic care at CareCraft Hospital. Our expert team specializes in diagnosing and treating bone, joint, and muscle conditions with advanced technology and personalized care. From injury management to complex surgeries, we help you regain mobility and lead a pain-free life.',
+                features: ['Fracture Treatment', 'Joint Replacement', 'Sports Injuries', 'Spine Care', 'Arthritis Management', 'Physiotherapy Integration'],
+                doctors: [
+                    { name: 'Dr Muhamed Reas', qual: 'Bsc, MBBS, MS (Ortho)', role: 'Medical Director & Dept Head', img: 'https://carecrafthospital.com/images/dr_reas.jpg' },
+                    { name: 'Dr Haron Cyriac', qual: 'MBBS, MS DNB (Ortho)', role: 'Orthopaedic Surgeon', img: 'https://carecrafthospital.com/images/dr-haron.jpg' }
+                ]
+            },
+            {
+                num: '02', tag: 'General Surgery',
+                title: 'Department of General Surgery',
+                img: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=900&q=80',
+                desc: 'Our General Surgery Department offers expert surgical care for a wide range of conditions. Equipped with advanced technology and a skilled surgical team, we provide safe and effective procedures, from minimally invasive techniques to major surgeries.',
+                features: ['Minimally Invasive Surgery', 'Laparoscopic Procedures', 'Emergency Surgery', 'Hernia Repair', 'Appendix & Gallbladder', 'Post-Op Recovery Care'],
+                doctors: [
+                    { name: 'Dr P John Mathew', qual: 'MS, FMAS, FIAGES', role: 'Senior Surgeon', img: 'https://carecrafthospital.com/images/IMG_0655.JPG' },
+                    { name: 'Dr Shafeer M Shafi', qual: 'MBBS, MS, DNB Surgeon', role: 'Senior Surgeon', img: 'https://carecrafthospital.com/images/shafeer.jpg' }
+                ]
+            },
+            {
+                num: '03', tag: 'E.N.T',
+                title: 'Department of E.N.T',
+                img: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=80',
+                desc: 'The ENT Department at CareCraft Hospital specializes in comprehensive care for ear, nose, and throat conditions. Our experienced ENT specialists use advanced diagnostic tools and treatment techniques to address hearing issues, sinus problems, throat disorders, and more.',
+                features: ['Hearing Assessment', 'Sinus Treatment', 'Throat Disorders', 'Tonsillectomy', 'Nasal Polyps', 'ENT Surgeries'],
+                doctors: [
+                    { name: 'Dr Adil Mohammad', qual: 'MBBS, MS(ENT) MRCS (ENT)', role: 'ENT Consultant', img: 'https://carecrafthospital.com/images/ADIL.png' }
+                ]
+            },
+            {
+                num: '04', tag: 'Urology',
+                title: 'Department of Urology',
+                img: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=900&q=80',
+                desc: 'The Urology Department at CareCraft Hospital provides expert care for urinary and reproductive health. Our skilled specialists offer advanced diagnostics and treatments for kidney stones, prostate issues, urinary tract disorders, and more.',
+                features: ['Kidney Stone Treatment', 'Prostate Care', 'Urinary Tract Disorders', 'Bladder Conditions', 'Urological Surgery', 'Reproductive Health'],
+                doctors: [
+  { 
+    name: 'Dr Mayank Bharti', 
+    qual: 'MBBS, MS, MCh (Urology)', 
+    role: 'Urology Consultant', 
+    img: 'https://carecrafthospital.com/images/DR%20MAYANK.jpeg' 
+  },
+  { 
+    name: 'Dr Jithesh', 
+    qual: 'MBBS, MS, MCh (Urology & Renal Transplant)', 
+    role: 'Urology Consultant', 
+    img: 'https://carecrafthospital.com/images/DR%20JITHESH.jpg' 
+  },
+  { 
+    name: 'Dr Ravi Teja P', 
+    qual: 'MBBS, MS, MCh (Urology)', 
+    role: 'Urology Consultant', 
+    img: 'https://carecrafthospital.com/images/ravi.jpeg' 
+  }
+]
+            },
+            {
+                num: '05', tag: 'General Medicine',
+                title: 'Department of General Medicine',
+                img: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80',
+                desc: 'The General Medicine Department at CareCraft Hospital delivers comprehensive care for a wide range of medical conditions. Our experienced physicians focus on accurate diagnosis, effective treatment, and preventive care.',
+                features: ['Chronic Disease Management', 'Preventive Health Checks', 'Fever & Infections', 'Diabetes Management', 'Hypertension Care', 'General Health Consultations'],
+                doctors: [
+                    { name: 'Dr Physician', qual: 'MBBS, MD (General Medicine)', role: 'Senior Physician', img: '' }
+                ]
+            },
+            {
+                num: '06', tag: 'Dermatology',
+                title: 'Department of Dermatology',
+                img: 'https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&fit=crop&w=900&q=80',
+                desc: 'The Dermatology Department at CareCraft Hospital offers expert care for all skin, hair, and nail concerns. Our specialists use advanced treatments and technology to address conditions like acne, eczema, psoriasis, and skin allergies.',
+                features: ['Acne Treatment', 'Eczema & Psoriasis', 'Skin Allergy Care', 'Hair Loss Treatment', 'Cosmetic Dermatology', 'Nail Disorders'],
+                doctors: [
+                    { name: 'Dr Saliny M', qual: 'MBBS, MD, DVL', role: 'Skin Specialist', img: 'https://carecrafthospital.com/images/salini.jpeg' }
+                ]
+            },
+            {
+                num: '07', tag: 'Psychiatry',
+                title: 'Department of Psychiatry',
+                img: 'https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=900&q=80',
+                desc: 'The Psychiatry Department at CareCraft Hospital provides compassionate mental health care for all ages. Our skilled psychiatrists specialize in treating anxiety, depression, stress, and other mental health conditions.',
+                features: ['Anxiety & Depression', 'Stress Management', 'Behavioral Therapy', 'Child Psychiatry', 'Addiction Counselling', 'Crisis Intervention'],
+                doctors: [
+                    { name: 'Dr Manju peethambaran', qual: 'MBBS, DPM (psychiatry)', role: 'Consultant Psychiatrist', img: 'https://carecrafthospital.com/images/manju.jpeg' }
+                ]
+            }
+        ];
+
+        function openModal(index) {
+            const d = departments[index];
+            document.getElementById('modalImg').src = d.img;
+            document.getElementById('modalImg').alt = d.title;
+            document.getElementById('modalTag').textContent = d.tag;
+            document.getElementById('modalTitle').textContent = d.title;
+            document.getElementById('modalNum').innerHTML =
+                `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:2px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Department ${d.num}`;
+            document.getElementById('modalDesc').textContent = d.desc;
+
+            // Doctors section
+            const docsEl = document.getElementById('modalDoctors');
+            if (d.doctors && d.doctors.length) {
+                docsEl.innerHTML = `<h4>Meet Our Doctors</h4><div class="dept-doctors-grid">${d.doctors.map(doc => {
+                    const initials = doc.name.split(' ').filter(w => w !== 'Dr').slice(0, 2).map(w => w[0]).join('');
+                    const avatar = doc.img
+                        ? `<img src="${doc.img}" alt="${doc.name}">`
+                        : `<span>${initials}</span>`;
+                    return `<div class="dept-doctor-card">
+                    <div class="dept-doctor-av">${avatar}</div>
+                    <strong>${doc.name}</strong>
+                    <small>${doc.qual}</small>
+                    <span class="dept-doctor-role">${doc.role}</span>
+                </div>`;
+                }).join('')
+                    }</div>`;
+                docsEl.style.display = 'block';
+            } else {
+                docsEl.innerHTML = '';
+                docsEl.style.display = 'none';
+            }
+
+            const feats = document.getElementById('modalFeatures');
+            feats.innerHTML = d.features.map(f =>
+                `<div class="dept-modal-feat"><div class="adot"></div>${f}</div>`
+            ).join('');
+
+
+
+            const df = document.getElementById('deptField');
+            if (df) df.value = d.tag;
+            const overlay = document.getElementById('deptModal');
+            overlay.classList.add('open');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeModal() {
+            document.getElementById('deptModal').classList.remove('open');
+            document.body.style.overflow = '';
+        }
+
+        document.getElementById('deptModal').addEventListener('click', function (e) {
+            if (e.target === this) closeModal();
+        });
+        document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+        window.addEventListener('scroll', () => {
+            document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 20);
+        });
+        function toggleMenu() { document.getElementById('mMenu').classList.toggle('open'); }
+        function closeMenu() { document.getElementById('mMenu').classList.remove('open'); }
+        document.addEventListener('click', e => {
+            const m = document.getElementById('mMenu');
+            if (m.classList.contains('open') && !m.contains(e.target) && !document.querySelector('.hamburger').contains(e.target)) closeMenu();
+        });
+        function scrollTest(dir) { document.getElementById('ttrack').scrollBy({ left: dir * 352, behavior: 'smooth' }); }
+
+        const obs = new IntersectionObserver(entries => {
+            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
+        }, { threshold: 0.1 });
+        document.querySelectorAll('.fi,.fil,.fir').forEach((el, i) => {
+            el.style.transitionDelay = (i % 5 * 0.07) + 's';
+            obs.observe(el);
+        });
+
+        function handleForm(e) {
+            e.preventDefault();
+            const btn = e.target.querySelector('button[type="submit"]');
+            const orig = btn.innerHTML;
+            btn.innerHTML = '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg> Inquiry Sent!';
+            btn.style.background = 'var(--teal)'; btn.disabled = true;
+            setTimeout(() => { btn.innerHTML = orig; btn.style.background = ''; btn.disabled = false; e.target.reset(); }, 3500);
+        }
+    </script>
+
+</body>
+
+</html>

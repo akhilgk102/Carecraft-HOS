@@ -9,24 +9,305 @@
         content="Carecraft Hospital in Haripad, Kerala – providing compassionate 24/7 healthcare including orthopedic care, physiotherapy, dental, and emergency services.">
     <meta name="keywords"
         content="Carecraft Hospital Haripad, Hospital in Haripad, Physiotherapy Haripad, Orthopedic treatment Haripad, Emergency care Kerala">
-        <!-- Social Share Preview -->
-<meta property="og:title" content="Carecraft Hospital – Haripad | Compassionate Healthcare 24/7">
-<meta property="og:description" content="Carecraft Hospital in Haripad providing orthopedic care, physiotherapy, dental care and 24/7 emergency services.">
-<meta property="og:image" content="./index_files/carelogo.png">
-<meta property="og:url" content="https://carecrafthospital.com">
-<meta property="og:type" content="website">
-<meta property="og:site_name" content="Carecraft Hospital">
+    <!-- Social Share Preview -->
+    <meta property="og:title" content="Carecraft Hospital – Haripad | Compassionate Healthcare 24/7">
+    <meta property="og:description"
+        content="Carecraft Hospital in Haripad providing orthopedic care, physiotherapy, dental care and 24/7 emergency services.">
+    <meta property="og:image" content="./index_files/carelogo.png">
+    <meta property="og:url" content="https://carecrafthospital.com">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Carecraft Hospital">
 
-<!-- Twitter / WhatsApp -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Carecraft Hospital – Haripad">
-<meta name="twitter:description" content="Compassionate healthcare available 24/7 in Haripad.">
-<meta name="twitter:image" content="./index_files/carelogo.png">
+    <!-- Twitter / WhatsApp -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Carecraft Hospital – Haripad">
+    <meta name="twitter:description" content="Compassionate healthcare available 24/7 in Haripad.">
+    <meta name="twitter:image" content="./index_files/carelogo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400&display=swap"
         rel="stylesheet">
     <style>
+        /* ── SERVICES SECTION ── */
+        .srv-section {
+            background: var(--bg);
+            padding: 96px 0;
+        }
+
+        .srv-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+            margin-top: 52px;
+        }
+
+        .srv-card {
+            background: #fff;
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            box-shadow: var(--shadow);
+            display: flex;
+            flex-direction: column;
+            transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s, border-color .2s;
+            position: relative;
+        }
+
+        .srv-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 24px 56px rgba(0, 0, 0, .14);
+            border-color: transparent;
+        }
+
+        .srv-img {
+            position: relative;
+            height: 220px;
+            overflow: hidden;
+            flex-shrink: 0;
+        }
+
+        .srv-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            transition: transform .55s cubic-bezier(.22, 1, .36, 1);
+        }
+
+        .srv-card:hover .srv-img img {
+            transform: scale(1.08);
+        }
+
+        .srv-img::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(160deg, rgba(151, 4, 125, .55) 0%, rgba(10, 5, 20, .25) 100%);
+            transition: opacity .3s;
+        }
+
+        .srv-card:hover .srv-img::after {
+            opacity: .8;
+        }
+
+        .srv-num {
+            position: absolute;
+            top: 14px;
+            left: 14px;
+            z-index: 2;
+            background: rgba(255, 255, 255, .18);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(255, 255, 255, .3);
+            color: #fff;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            padding: 4px 11px;
+            border-radius: 50px;
+        }
+
+        .srv-live {
+            position: absolute;
+            top: 14px;
+            right: 14px;
+            z-index: 2;
+            background: rgba(74, 222, 128, .18);
+            border: 1px solid rgba(74, 222, 128, .35);
+            color: #4ade80;
+            font-size: 10px;
+            font-weight: 700;
+            letter-spacing: .8px;
+            padding: 4px 10px;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        .srv-live-dot {
+            width: 6px;
+            height: 6px;
+            background: #4ade80;
+            border-radius: 50%;
+            animation: sglow 2s infinite;
+        }
+
+        .srv-icon-wrap {
+            position: absolute;
+            bottom: -20px;
+            left: 22px;
+            z-index: 3;
+            width: 48px;
+            height: 48px;
+            border-radius: 14px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, .22);
+            border: 2px solid rgba(255, 255, 255, .25);
+            transition: transform .3s;
+        }
+
+        .srv-card:hover .srv-icon-wrap {
+            transform: scale(1.1) rotate(-3deg);
+        }
+
+        .srv-body {
+            padding: 32px 22px 26px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .srv-tag {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            background: var(--purple-light);
+            color: var(--purple);
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1.2px;
+            text-transform: uppercase;
+            padding: 3px 11px;
+            border-radius: 50px;
+            width: fit-content;
+            margin-top: 6px;
+        }
+
+        .srv-body h3 {
+            font-size: 20px;
+            color: var(--text);
+            line-height: 1.3;
+        }
+
+        .srv-body p {
+            font-size: 14px;
+            color: var(--text-muted);
+            line-height: 1.72;
+            flex: 1;
+        }
+
+        .srv-timing {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: var(--teal-light);
+            color: var(--teal-dark);
+            font-size: 12px;
+            font-weight: 600;
+            padding: 5px 12px;
+            border-radius: 50px;
+            width: fit-content;
+            margin-top: 4px;
+        }
+
+        .srv-divider {
+            height: 1px;
+            background: var(--border);
+            margin: 8px 0;
+        }
+
+        .srv-footer {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 8px;
+        }
+
+        .srv-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 5px;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--purple);
+            text-transform: uppercase;
+            letter-spacing: .7px;
+            transition: gap .2s;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            padding: 0;
+        }
+
+        .srv-card:hover .srv-link {
+            gap: 9px;
+        }
+
+        .srv-link svg {
+            transition: transform .2s;
+        }
+
+        .srv-card:hover .srv-link svg {
+            transform: translateX(3px);
+        }
+
+        .srv-appt {
+            padding: 8px 16px;
+            font-size: 12px;
+            background: var(--purple-light);
+            color: var(--purple);
+            border: none;
+            border-radius: 50px;
+            font-weight: 600;
+            cursor: pointer;
+            font-family: 'DM Sans', sans-serif;
+            transition: all .2s;
+            text-decoration: none;
+        }
+
+        .srv-appt:hover {
+            background: var(--purple);
+            color: #fff;
+        }
+
+        @media(max-width: 1024px) {
+            .srv-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media(max-width: 480px) {
+            .srv-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        /* ── Carecraft Hospital Scrollbar ──
+   Colors from :root variables:
+   --purple: #97047D  |  --purple-light: #f5e8f3
+   --purple-dark: #7a0366               */
+
+        /* Firefox */
+        * {
+            scrollbar-width: thin;
+            scrollbar-color: #97047D #f5e8f3;
+        }
+
+        /* Chrome, Edge, Safari */
+        ::-webkit-scrollbar {
+            width: 15px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: #f5e8f3;
+            border-radius: 10px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: #97047D;
+            border-radius: 10px;
+            border: 2px solid #f5e8f3;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: #7a0366;
+        }
+
         .footer-logo img {
             height: 55px;
             width: auto;
@@ -130,12 +411,11 @@
             transform: translateY(-2px);
         }
 
-        .btn-outline {
-            background: transparent;
-            color: var(--purple);
-            border: 2px solid var(--purple);
-            
-        }
+.btn-outline {
+    background: transparent;
+    color: var(--purple);
+    border: 2px solid var(--purple) !important;
+}
 
         .btn-outline:hover {
             background: var(--purple);
@@ -304,7 +584,15 @@
             justify-content: center;
         }
 
-.hero { min-height:100svh; position:relative; display:flex; align-items:center; padding-top:73px; overflow:hidden; background:#0a0f1e; }
+        .hero {
+            min-height: 100svh;
+            position: relative;
+            display: flex;
+            align-items: center;
+            padding-top: 73px;
+            overflow: hidden;
+            background: #0a0f1e;
+        }
 
         .hero-img {
             position: absolute;
@@ -1152,6 +1440,43 @@
             flex: 1;
         }
 
+        .dept-modal-content-grid {
+            display: grid;
+            grid-template-columns: 1fr 260px;
+            gap: 28px;
+            align-items: start;
+            margin-bottom: 22px;
+        }
+
+        /* Left column */
+        .dept-modal-left {
+            display: flex;
+            flex-direction: column;
+            gap: 0;
+        }
+
+        /* Right column — doctors */
+        .dept-modal-right {
+            position: sticky;
+            top: 0;
+        }
+
+        /* Doctors grid stacks vertically on right side */
+        .dept-modal-right .dept-doctors-grid {
+            grid-template-columns: 1fr;
+        }
+
+        /* Tablet / mobile: stack columns */
+        @media(max-width:720px) {
+            .dept-modal-content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dept-modal-right .dept-doctors-grid {
+                grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            }
+        }
+
         .dept-modal-body p {
             font-size: 15px;
             color: var(--text-muted);
@@ -1282,6 +1607,40 @@
             border: 1px solid var(--border);
             box-shadow: var(--shadow);
             transition: transform .3s;
+        }
+
+        .wstat-icon {
+            width: 44px;
+            height: 44px;
+            border-radius: 11px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 10px;
+        }
+
+        .wstat:nth-child(1) .wstat-icon {
+            background: rgba(255, 255, 255, .18);
+            color: #fff;
+        }
+
+        .wstat:nth-child(2) .wstat-icon {
+            background: rgba(255, 255, 255, .22);
+            color: #fff;
+        }
+
+        .wstat:nth-child(3) .wstat-icon {
+            background: rgba(151, 4, 125, .12);
+            color: #97047D;
+        }
+
+        .wstat:nth-child(4) .wstat-icon {
+            background: rgba(109, 197, 186, .18);
+            color: #4fa89c;
+        }
+
+        .wstat {
+            align-items: center;
         }
 
         .wstat:hover {
@@ -1987,34 +2346,72 @@
             }
         }
 
-        @media(max-width:480px){
-    .hero-inner { padding:60px 24px 80px; }
-    .hero-card-wrap { display:none; }
-    .rating-pill { display:none; }
-}
+        @media(max-width:480px) {
+            .hero-inner {
+                padding: 60px 24px 80px;
+            }
 
-@keyframes prelogo { from{transform:scale(.95);opacity:.7} to{transform:scale(1.05);opacity:1} }
-@keyframes predot { 0%,100%{transform:translateY(0);opacity:.4} 50%{transform:translateY(-8px);opacity:1} }
+            .hero-card-wrap {
+                display: none;
+            }
+
+            .rating-pill {
+                display: none;
+            }
+        }
+
+        @keyframes prelogo {
+            from {
+                transform: scale(.95);
+                opacity: .7
+            }
+
+            to {
+                transform: scale(1.05);
+                opacity: 1
+            }
+        }
+
+        @keyframes predot {
+
+            0%,
+            100% {
+                transform: translateY(0);
+                opacity: .4
+            }
+
+            50% {
+                transform: translateY(-8px);
+                opacity: 1
+            }
+        }
     </style>
 </head>
 
 <body>
 
     <!-- PRELOADER -->
-<div id="preloader" style="
+    <div id="preloader" style="
     position:fixed;inset:0;z-index:99999;
     background:#fff;
     display:flex;flex-direction:column;
     align-items:center;justify-content:center;gap:20px;
     transition:opacity .5s ease, visibility .5s ease;
 ">
-    <img src="./index_files/carelogo.png" alt="Carecraft Hospital" style="height:70px;width:auto;animation:prelogo 1.2s ease-in-out infinite alternate;">
-    <div style="display:flex;gap:7px;align-items:center;">
-        <div class="pre-dot" style="width:9px;height:9px;background:#97047D;border-radius:50%;animation:predot 1.2s ease-in-out infinite;"></div>
-        <div class="pre-dot" style="width:9px;height:9px;background:#97047D;border-radius:50%;animation:predot 1.2s ease-in-out .2s infinite;"></div>
-        <div class="pre-dot" style="width:9px;height:9px;background:#6DC5BA;border-radius:50%;animation:predot 1.2s ease-in-out .4s infinite;"></div>
+        <img src="./index_files/carelogo.png" alt="Carecraft Hospital"
+            style="height:70px;width:auto;animation:prelogo 1.2s ease-in-out infinite alternate;">
+        <div style="display:flex;gap:7px;align-items:center;">
+            <div class="pre-dot"
+                style="width:9px;height:9px;background:#97047D;border-radius:50%;animation:predot 1.2s ease-in-out infinite;">
+            </div>
+            <div class="pre-dot"
+                style="width:9px;height:9px;background:#97047D;border-radius:50%;animation:predot 1.2s ease-in-out .2s infinite;">
+            </div>
+            <div class="pre-dot"
+                style="width:9px;height:9px;background:#6DC5BA;border-radius:50%;animation:predot 1.2s ease-in-out .4s infinite;">
+            </div>
+        </div>
     </div>
-</div>
 
     <!-- DEPARTMENT MODAL -->
     <div class="dept-modal-overlay" id="deptModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
@@ -2069,6 +2466,7 @@
             <div class="nav-links">
                 <a href="#about">About</a>
                 <a href="#department">Departments</a>
+                <a href="#services">Services</a>
                 <a href="#why">Why Us</a>
                 <a href="#testimonials">Reviews</a>
                 <a href="#contact">Contact</a>
@@ -2091,6 +2489,7 @@
     <div class="mobile-menu" id="mMenu">
         <a href="#about" onclick="closeMenu()">About</a>
         <a href="#department" onclick="closeMenu()">Departments</a>
+        <a href="#services" onclick="closeMenu()">Services</a>
         <a href="#why" onclick="closeMenu()">Why Us</a>
         <a href="#testimonials" onclick="closeMenu()">Reviews</a>
         <a href="#contact" onclick="closeMenu()">Contact</a>
@@ -2117,7 +2516,7 @@
                 <div class="hero-badge">
                     <div class="badge-dot"></div>Haripad's Trusted Hospital
                 </div>
-                <h1 >Compassionate Healthcare<br><em style="font-style: italic;">You Can Trust</em></h1>
+                <h1>Compassionate Healthcare<br><em style="font-style: italic;">You Can Trust</em></h1>
                 <p class="hero-sub">Providing quality medical care, advanced treatments, and patient-focused services
                     for the Haripad community — 24 hours a day, every day.</p>
                 <div class="hero-btns">
@@ -2167,7 +2566,7 @@
                                 <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
                                 <polyline points="9 22 9 12 15 12 15 22" />
                             </svg></div>
-                        <div><strong >Carecraft Hospital</strong><span>Multi-Speciality · Haripad</span></div>
+                        <div><strong>Carecraft Hospital</strong><span>Multi-Speciality · Haripad</span></div>
                     </div>
                     <div class="hcard-stats">
                         <div class="hcard-stat"><strong>24/7</strong><span>Emergency Care</span></div>
@@ -2435,8 +2834,8 @@
                 <div class="dept-card fi" onclick="openModal(6)">
                     <div class="dept-img">
                         <span class="dept-num">07</span>
-                        <img src="https://prakash-hospitals.b-cdn.net/departments/psychiatry/1.png"
-                            alt="Psychiatry" loading="lazy">
+                        <img src="https://prakash-hospitals.b-cdn.net/departments/psychiatry/1.png" alt="Psychiatry"
+                            loading="lazy">
                         <div class="dept-arrow"><svg width="14" height="14" viewBox="0 0 24 24" fill="none"
                                 stroke="#fff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                                 <line x1="5" y1="12" x2="19" y2="12" />
@@ -2521,11 +2920,201 @@
                             </svg>+91 94970 72222</a></div>
                 </div>
                 <div class="why-stats fir">
-                    <div class="wstat"><strong>24/7</strong><span>Emergency Support</span></div>
-                    <div class="wstat"><strong>4.0★</strong><span>Google Rated</span></div>
-                    <div class="wstat"><strong>7+</strong><span>Medical Specialties</span></div>
-                    <div class="wstat"><strong>100%</strong><span>Patient Dedication</span></div>
+                    <div class="wstat">
+                        <div class="wstat-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                        </div>
+                        <strong>24/7</strong><span>Emergency Support</span>
+                    </div>
+                    <div class="wstat">
+                        <div class="wstat-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                        </div>
+                        <strong>4.0★</strong><span>Google Rated</span>
+                    </div>
+                    <div class="wstat">
+                        <div class="wstat-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                        <strong>7+</strong><span>Medical Specialties</span>
+                    </div>
+                    <div class="wstat">
+                        <div class="wstat-icon">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                            </svg>
+                        </div>
+                        <strong>100%</strong><span>Patient Dedication</span>
+                    </div>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="srv-section" id="services">
+        <div class="container">
+            <div style="text-align:center;">
+                <div class="sec-label fi">Our Services</div>
+                <h2 class="sec-title fi">Everything You Need, Under One Roof</h2>
+                <p class="sec-sub fi" style="margin:0 auto;">From emergency response to everyday wellness — our services
+                    are built around your comfort and recovery.</p>
+            </div>
+
+            <div class="srv-grid">
+
+                <!-- 1 · Emergency -->
+                <div class="srv-card fi">
+                    <div class="srv-img">
+                        <span class="srv-num">01</span>
+                        <div class="srv-live">
+                            <div class="srv-live-dot"></div>24 / 7
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=700&q=80"
+                            alt="Emergency Care" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-tag">Emergency</span>
+                        <h3>Emergency &amp; Trauma Care</h3>
+                        <p>Providing immediate medical attention for critical injuries and life-threatening conditions.
+                            Our 24/7 emergency services are equipped with advanced technology and a dedicated team of
+                            specialists to ensure prompt and effective care.</p>
+                        <div class="srv-divider"></div>
+                        <div class="srv-footer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 2 · Pharmacy -->
+                <div class="srv-card fi">
+                    <div class="srv-img">
+                        <span class="srv-num">02</span>
+                        <div class="srv-live">
+                            <div class="srv-live-dot"></div>24 / 7
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?auto=format&fit=crop&w=700&q=80"
+                            alt="Pharmacy" loading="lazy">
+
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-tag">Pharmacy</span>
+                        <h3>In-House Pharmacy</h3>
+                        <p>Our round-the-clock pharmacy ensures that essential medications are always available,
+                            providing reliable access to prescriptions and over-the-counter drugs any time, day or
+                            night.</p>
+                        <div class="srv-divider"></div>
+                        <div class="srv-footer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3 · Radiology -->
+                <div class="srv-card fi">
+                    <div class="srv-img">
+                        <span class="srv-num">03</span>
+                        <div class="srv-live">
+                            <div class="srv-live-dot"></div>24 / 7
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1530497610245-94d3c16cda28?auto=format&fit=crop&w=700&q=80"
+                            alt="Radiology" loading="lazy">
+>
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-tag">Radiology</span>
+                        <h3>Radiology &amp; X-Ray</h3>
+                        <p>Available around the clock, offering accurate and high-quality imaging. Our X-Ray services
+                            assist in quick diagnosis and effective treatment, ensuring patient comfort and safety at
+                            all times.</p>
+                        <div class="srv-divider"></div>
+                        <div class="srv-footer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4 · Insurance -->
+                <div class="srv-card fi">
+                    <div class="srv-img">
+                        <span class="srv-num">04</span>
+                        <img src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=700&q=80"
+                            alt="Insurance" loading="lazy">
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-tag">Insurance</span>
+                        <h3>Insurance Assistance</h3>
+                        <p>We provide comprehensive support for insurance claims, ensuring a hassle-free process by
+                            coordinating with providers and helping patients navigate coverage details with ease.</p>
+                        <div class="srv-divider"></div>
+                        <div class="srv-footer">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5 · Laboratory -->
+                <div class="srv-card fi">
+                    <div class="srv-img">
+                        <span class="srv-num">05</span>
+                        <div class="srv-live">
+                            <div class="srv-live-dot"></div>24 / 7
+                        </div>
+                        <img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=700&q=80"
+                            alt="Laboratory" loading="lazy">
+
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-tag">Laboratory</span>
+                        <h3>Diagnostic Laboratory</h3>
+                        <p>Our fully equipped laboratory operates round the clock, delivering accurate diagnostic
+                            results anytime, ensuring timely support for both emergency and routine medical needs.</p>
+                        <div class="srv-divider"></div>
+                        <div class="srv-footer">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6 · Physiotherapy -->
+                <div class="srv-card fi">
+                    <div class="srv-img">
+                        <span class="srv-num">06</span>
+                        <img src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=700&q=80"
+                            alt="Physiotherapy" loading="lazy">
+
+                    </div>
+                    <div class="srv-body">
+                        <span class="srv-tag">Physiotherapy</span>
+                        <h3>Physiotherapy Unit</h3>
+                        <p>Our physiotherapy department offers personalized care to help restore movement, improve
+                            strength, and enhance overall well-being, tailored to each patient's recovery journey.</p>
+                        <div class="srv-timing">
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <polyline points="12 6 12 12 16 14" />
+                            </svg>
+                            Mon – Sat &nbsp;·&nbsp; 10:30 AM – 3:30 PM
+                        </div>
+                        <div class="srv-divider"></div>
+                        <div class="srv-footer">
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -2770,8 +3359,8 @@
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                 <circle cx="12" cy="10" r="3" />
                             </svg></div>
-                        <div><strong>Hospital Address</strong><span>7CMR+M42, Nedumudy Kruvata Rd, Danapady
-                                Rd,<br>Haripad, Kerala 690548, India</span></div>
+                        <div><strong>Hospital Address</strong><span> Kumarapuram PO, Karuvatta , Danapady
+                                Rd,<br>Haripad, Alappuzha, Kerala 690514, </span></div>
                     </div>
                     <div class="cinfo-item">
                         <div class="cinfo-ic"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -2848,7 +3437,8 @@
                     <ul class="flinks">
                         <li><a href="#home">Home</a></li>
                         <li><a href="#about">About Us</a></li>
-                        <li><a href="#department">Services</a></li>
+                        <li><a href="#department">Departments</a></li>
+                        <li><a href="#services">Services</a></li>
                         <li><a href="#why">Why Choose Us</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
@@ -2873,7 +3463,8 @@
                                 style="flex-shrink:0;margin-top:4px;">
                                 <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
                                 <circle cx="12" cy="10" r="3" />
-                            </svg><span>7CMR+M42, Nedumudy Kruvata Rd, Haripad, Kerala 690548</span></li>
+                            </svg><span>Kumarapuram PO, Karuvatta , Danapady
+                                Rd, Haripad, Alappuzha, Kerala 690514</span></li>
                         <li><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#6DC5BA"
                                 stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 style="flex-shrink:0;margin-top:4px;">
@@ -2918,11 +3509,11 @@
 
     <script>
         window.addEventListener('load', () => {
-    const pre = document.getElementById('preloader');
-    pre.style.opacity = '0';
-    pre.style.visibility = 'hidden';
-    setTimeout(() => pre.remove(), 600);
-});
+            const pre = document.getElementById('preloader');
+            pre.style.opacity = '0';
+            pre.style.visibility = 'hidden';
+            setTimeout(() => pre.remove(), 600);
+        });
     </script>
 
     <script>
@@ -2930,7 +3521,7 @@
             {
                 num: '01', tag: 'Orthopaedics',
                 title: 'Department of Orthopaedics',
-                img: 'https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=900&q=80',
+                img: 'https://images.unsplash.com/photo-1706777193603-76c3e9613553?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 desc: 'Discover world-class orthopaedic care at CareCraft Hospital. Our expert team specializes in diagnosing and treating bone, joint, and muscle conditions with advanced technology and personalized care. From injury management to complex surgeries, we help you regain mobility and lead a pain-free life.',
                 features: ['Fracture Treatment', 'Joint Replacement', 'Sports Injuries', 'Spine Care', 'Arthritis Management', 'Physiotherapy Integration'],
                 doctors: [
@@ -2941,7 +3532,7 @@
             {
                 num: '02', tag: 'General Surgery',
                 title: 'Department of General Surgery',
-                img: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=900&q=80',
+                img: 'https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=600&q=80',
                 desc: 'Our General Surgery Department offers expert surgical care for a wide range of conditions. Equipped with advanced technology and a skilled surgical team, we provide safe and effective procedures, from minimally invasive techniques to major surgeries.',
                 features: ['Minimally Invasive Surgery', 'Laparoscopic Procedures', 'Emergency Surgery', 'Hernia Repair', 'Appendix & Gallbladder', 'Post-Op Recovery Care'],
                 doctors: [
@@ -2952,7 +3543,7 @@
             {
                 num: '03', tag: 'E.N.T',
                 title: 'Department of E.N.T',
-                img: 'https://images.unsplash.com/photo-1559757175-0eb30cd8c063?auto=format&fit=crop&w=900&q=80',
+                img: 'https://plus.unsplash.com/premium_photo-1661779725491-e997e70928fc?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D',
                 desc: 'The ENT Department at CareCraft Hospital specializes in comprehensive care for ear, nose, and throat conditions. Our experienced ENT specialists use advanced diagnostic tools and treatment techniques to address hearing issues, sinus problems, throat disorders, and more.',
                 features: ['Hearing Assessment', 'Sinus Treatment', 'Throat Disorders', 'Tonsillectomy', 'Nasal Polyps', 'ENT Surgeries'],
                 doctors: [
@@ -2962,29 +3553,29 @@
             {
                 num: '04', tag: 'Urology',
                 title: 'Department of Urology',
-                img: 'https://images.unsplash.com/photo-1530026405186-ed1f139313f8?auto=format&fit=crop&w=900&q=80',
+                img: 'https://www.lyfboat.com/wp-content/uploads/2019/04/UrologyBanner-1024x390.jpg',
                 desc: 'The Urology Department at CareCraft Hospital provides expert care for urinary and reproductive health. Our skilled specialists offer advanced diagnostics and treatments for kidney stones, prostate issues, urinary tract disorders, and more.',
                 features: ['Kidney Stone Treatment', 'Prostate Care', 'Urinary Tract Disorders', 'Bladder Conditions', 'Urological Surgery', 'Reproductive Health'],
                 doctors: [
-  { 
-    name: 'Dr Mayank Bharti', 
-    qual: 'MBBS, MS, MCh (Urology)', 
-    role: 'Urology Consultant', 
-    img: 'https://carecrafthospital.com/images/DR%20MAYANK.jpeg' 
-  },
-  { 
-    name: 'Dr Jithesh', 
-    qual: 'MBBS, MS, MCh (Urology & Renal Transplant)', 
-    role: 'Urology Consultant', 
-    img: 'https://carecrafthospital.com/images/DR%20JITHESH.jpg' 
-  },
-  { 
-    name: 'Dr Ravi Teja P', 
-    qual: 'MBBS, MS, MCh (Urology)', 
-    role: 'Urology Consultant', 
-    img: 'https://carecrafthospital.com/images/ravi.jpeg' 
-  }
-]
+                    {
+                        name: 'Dr Mayank Bharti',
+                        qual: 'MBBS, MS, MCh (Urology)',
+                        role: 'Urology Consultant',
+                        img: 'https://carecrafthospital.com/images/DR%20MAYANK.jpeg'
+                    },
+                    {
+                        name: 'Dr Jithesh',
+                        qual: 'MBBS, MS, MCh (Urology & Renal Transplant)',
+                        role: 'Urology Consultant',
+                        img: 'https://carecrafthospital.com/images/DR%20JITHESH.jpg'
+                    },
+                    {
+                        name: 'Dr Ravi Teja P',
+                        qual: 'MBBS, MS, MCh (Urology)',
+                        role: 'Urology Consultant',
+                        img: 'https://carecrafthospital.com/images/ravi.jpeg'
+                    }
+                ]
             },
             {
                 num: '05', tag: 'General Medicine',
@@ -2999,7 +3590,7 @@
             {
                 num: '06', tag: 'Dermatology',
                 title: 'Department of Dermatology',
-                img: 'https://images.unsplash.com/photo-1616391182219-e080b4d1043a?auto=format&fit=crop&w=900&q=80',
+                img: 'https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/dermatologist-skin-doctor-1296x728-header.jpg?w=1155&h=1528',
                 desc: 'The Dermatology Department at CareCraft Hospital offers expert care for all skin, hair, and nail concerns. Our specialists use advanced treatments and technology to address conditions like acne, eczema, psoriasis, and skin allergies.',
                 features: ['Acne Treatment', 'Eczema & Psoriasis', 'Skin Allergy Care', 'Hair Loss Treatment', 'Cosmetic Dermatology', 'Nail Disorders'],
                 doctors: [
@@ -3009,7 +3600,7 @@
             {
                 num: '07', tag: 'Psychiatry',
                 title: 'Department of Psychiatry',
-                img: 'https://images.unsplash.com/photo-1590650153855-d9e808231d41?auto=format&fit=crop&w=900&q=80',
+                img: 'https://prakash-hospitals.b-cdn.net/departments/psychiatry/1.png',
                 desc: 'The Psychiatry Department at CareCraft Hospital provides compassionate mental health care for all ages. Our skilled psychiatrists specialize in treating anxiety, depression, stress, and other mental health conditions.',
                 features: ['Anxiety & Depression', 'Stress Management', 'Behavioral Therapy', 'Child Psychiatry', 'Addiction Counselling', 'Crisis Intervention'],
                 doctors: [
@@ -3017,22 +3608,34 @@
                 ]
             }
         ];
-
         function openModal(index) {
             const d = departments[index];
+
+            /* ── hero section ── */
             document.getElementById('modalImg').src = d.img;
             document.getElementById('modalImg').alt = d.title;
             document.getElementById('modalTag').textContent = d.tag;
             document.getElementById('modalTitle').textContent = d.title;
+
+            /* ── department badge ── */
             document.getElementById('modalNum').innerHTML =
-                `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right:2px"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg> Department ${d.num}`;
+                `<svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+         stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+         style="margin-right:2px"><circle cx="12" cy="12" r="10"/>
+         <line x1="12" y1="8" x2="12" y2="12"/>
+         <line x1="12" y1="16" x2="12.01" y2="16"/></svg> Department ${d.num}`;
+
+            /* ── description ── */
             document.getElementById('modalDesc').textContent = d.desc;
 
-            // Doctors section
+            /* ── doctors ── */
             const docsEl = document.getElementById('modalDoctors');
             if (d.doctors && d.doctors.length) {
-                docsEl.innerHTML = `<h4>Meet Our Doctors</h4><div class="dept-doctors-grid">${d.doctors.map(doc => {
-                    const initials = doc.name.split(' ').filter(w => w !== 'Dr').slice(0, 2).map(w => w[0]).join('');
+                docsEl.innerHTML = `<h4>Our Doctors</h4>
+            <div class="dept-doctors-grid">
+            ${d.doctors.map(doc => {
+                    const initials = doc.name.split(' ')
+                        .filter(w => w !== 'Dr').slice(0, 2).map(w => w[0]).join('');
                     const avatar = doc.img
                         ? `<img src="${doc.img}" alt="${doc.name}">`
                         : `<span>${initials}</span>`;
@@ -3042,28 +3645,67 @@
                     <small>${doc.qual}</small>
                     <span class="dept-doctor-role">${doc.role}</span>
                 </div>`;
-                }).join('')
-                    }</div>`;
+                }).join('')}
+            </div>`;
                 docsEl.style.display = 'block';
             } else {
                 docsEl.innerHTML = '';
                 docsEl.style.display = 'none';
             }
 
-            const feats = document.getElementById('modalFeatures');
-            feats.innerHTML = d.features.map(f =>
-                `<div class="dept-modal-feat"><div class="adot"></div>${f}</div>`
-            ).join('');
+            /* ── features ── */
+            document.getElementById('modalFeatures').innerHTML =
+                d.features.map(f =>
+                    `<div class="dept-modal-feat"><div class="adot"></div>${f}</div>`
+                ).join('');
 
+            /* ── BUILD two-column grid ── */
+            const body = document.querySelector('.dept-modal-body');
+            const footer = body.querySelector('.dept-modal-footer');
+            const numEl = document.getElementById('modalNum');
+            const descEl = document.getElementById('modalDesc');
+            const featsEl = document.getElementById('modalFeatures');
+            const docsEl2 = document.getElementById('modalDoctors');
 
+            /* remove old grid wrapper if re-opening */
+            const old = body.querySelector('.dept-modal-content-grid');
+            if (old) old.remove();
 
+            /* detach elements before rebuilding */
+            body.appendChild(numEl);
+            body.appendChild(descEl);
+            body.appendChild(featsEl);
+            body.appendChild(docsEl2);
+
+            /* create grid → left → right */
+            const grid = document.createElement('div');
+            grid.className = 'dept-modal-content-grid';
+
+            const left = document.createElement('div');
+            left.className = 'dept-modal-left';
+
+            const right = document.createElement('div');
+            right.className = 'dept-modal-right';
+
+            left.appendChild(numEl);
+            left.appendChild(descEl);
+            left.appendChild(featsEl);
+            right.appendChild(docsEl2);
+
+            grid.appendChild(left);
+            grid.appendChild(right);
+
+            /* insert grid BEFORE the footer buttons */
+            body.insertBefore(grid, footer);
+
+            /* ── pre-fill contact form dept field ── */
             const df = document.getElementById('deptField');
             if (df) df.value = d.tag;
-            const overlay = document.getElementById('deptModal');
-            overlay.classList.add('open');
+
+            /* ── open overlay ── */
+            document.getElementById('deptModal').classList.add('open');
             document.body.style.overflow = 'hidden';
         }
-
         function closeModal() {
             document.getElementById('deptModal').classList.remove('open');
             document.body.style.overflow = '';
@@ -3085,9 +3727,15 @@
         });
         function scrollTest(dir) { document.getElementById('ttrack').scrollBy({ left: dir * 352, behavior: 'smooth' }); }
 
-        const obs = new IntersectionObserver(entries => {
-            entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('vis'); });
-        }, { threshold: 0.1 });
+const obs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+        if (e.isIntersecting) {
+            e.target.classList.add('vis');
+        } else {
+            e.target.classList.remove('vis');  // ← this line re-enables the animation
+        }
+    });
+}, { threshold: 0.1 });
         document.querySelectorAll('.fi,.fil,.fir').forEach((el, i) => {
             el.style.transitionDelay = (i % 5 * 0.07) + 's';
             obs.observe(el);

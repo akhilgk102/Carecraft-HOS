@@ -358,13 +358,13 @@
             scroll-behavior: smooth;
         }
 
-        body {
-            font-family: 'DM Sans', sans-serif;
-            color: var(--text);
-            background: var(--white);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
+html, body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--text);
+    background: var(--white);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
 
         h1,
         h2,
@@ -1507,13 +1507,16 @@
             background: var(--teal);
             flex-shrink: 0;
         }
+.dept-modal-footer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
-        .dept-modal-footer {
-            display: flex;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
+.dept-modal-footer .btn {
+    width: 100%;
+    justify-content: center;
+}
         .dept-modal-num-badge {
             display: inline-flex;
             align-items: center;
